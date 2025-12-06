@@ -25,7 +25,7 @@ const HeaderOne = ({ headerTop }: any) => {
             sticky ? "sticky" : ""
           }`}
           style={{
-            background: "linear-gradient(90deg, #71afff 0%, #1a04e6 100%)",
+            background: "linear-gradient(90deg, #ffffff 0%, #ffffff 100%)",
           }}
         >
           <div className="container">
@@ -35,12 +35,10 @@ const HeaderOne = ({ headerTop }: any) => {
                   <div className="logo">
                     <Link href="/" className="header-logo">
                       <Image
-                        src={logo}
+                        src="/navkarEcom.png"
                         alt="logo-img"
-                        style={{
-                          height: "40px",
-                          width: "auto",
-                        }}
+                        width={60}
+                        height={50}
                       />
                       {/* <img src="/assets/img/logo.jpeg" alt="img" /> */}
                     </Link>

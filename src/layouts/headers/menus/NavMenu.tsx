@@ -55,7 +55,7 @@ const NavMenu = () => {
                         sub_m.link && isSubMenuItemActive(sub_m.link)
                     ))
                     ? "#ffe000"
-                    : "white",
+                    : "#333",
                 transition: "color 0.3s ease",
               }}
             >
