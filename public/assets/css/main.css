@@ -3421,6 +3421,9 @@ input.main-search-input::placeholder {
 .service-items-2 .service-content h3 a:hover {
   background: linear-gradient(90deg, #ff9900 0%, #cc2500 100%);
   -webkit-background-clip: text;
+  background-clip: text;
+  background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
@@ -5476,6 +5479,7 @@ input.main-search-input::placeholder {
   font-size: 80px;
   background: var(--color-gradient-1);
   -webkit-background-clip: text;
+    background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 575px) {
@@ -5569,6 +5573,7 @@ input.main-search-input::placeholder {
   color: var(--white);
   background: initial;
   -webkit-background-clip: initial;
+  background-clip: initial;
   -webkit-text-fill-color: initial;
 }
 .pricing-items.active .pricing-header h2 sub {
