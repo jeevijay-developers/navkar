@@ -6,9 +6,23 @@ const FooterOne = () => {
   return (
     <footer
       className="footer-section fix bg-cover"
-      style={{ backgroundImage: `url(/assets/img/footer-bg.jpg)` }}
+      style={{
+        backgroundImage: `url(/assets/img/footer-bg.jpg)`,
+        position: "relative",
+      }}
     >
-      <div className="container">
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(255, 255, 255, 0.95)",
+          zIndex: 0,
+        }}
+      ></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="footer-widgets-wrapper">
           <div className="row">
             <div
@@ -18,15 +32,20 @@ const FooterOne = () => {
               <div className="single-footer-widget">
                 <div className="widget-head ">
                   <Link href="/">
-                    <Image src={logo} width={80} alt="logo-img" />
+                    <Image
+                      src="/navkarEcom.png"
+                      width={90}
+                      height={80}
+                      alt="logo-img"
+                    />
                   </Link>
                 </div>
                 <div className="footer-content">
-                  <p>
+                  <p style={{ color: "#333" }}>
                     F-7, Arunoday Complex, Opp. Little Hut, GIDC Estate
                     Ankleshwar.
                   </p>
-                  <ul className="contact-info">
+                  <ul className="contact-info" style={{ color: "#333" }}>
                     {/* <li>
                       <i className="fas fa-map-marker-alt"></i>
                       6391 Elgin St. Celina, USA
@@ -46,9 +65,9 @@ const FooterOne = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Quick Link</h4>
+                  <h4 style={{ color: "#222" }}>Quick Link</h4>
                 </div>
-                <ul className="list-area">
+                <ul className="list-area" style={{ color: "#333" }}>
                   <li>
                     <Link href="/about">
                       <i className="fa-solid fa-chevron-right"></i>About
@@ -84,7 +103,7 @@ const FooterOne = () => {
             >
               <div className="single-footer-widget">
                 <div className="widget-head">
-                  <h4>Latest Post</h4>
+                  <h4 style={{ color: "#222" }}>Latest Post</h4>
                 </div>
                 <div className="footer-post">
                   <div className="single-post-item mb-4">
@@ -95,11 +114,13 @@ const FooterOne = () => {
                       }}
                     ></div>
                     <div className="post-content">
-                      <div className="post-date">
+                      <div className="post-date" style={{ color: "#666" }}>
                         <i className="far fa-calendar-alt"></i>15 Dec, 2024
                       </div>
-                      <h6>
-                        <Link href={`/blog-0`}>Sustainable Packaging</Link>
+                      <h6 style={{ color: "#222" }}>
+                        <Link href={`/blog-0`} style={{ color: "#222" }}>
+                          Sustainable Packaging
+                        </Link>
                       </h6>
                     </div>
                   </div>
@@ -111,11 +132,13 @@ const FooterOne = () => {
                       }}
                     ></div>
                     <div className="post-content">
-                      <div className="post-date">
+                      <div className="post-date" style={{ color: "#666" }}>
                         <i className="far fa-calendar-alt"></i>29 Feb, 2024
                       </div>
-                      <h6>
-                        <Link href="/blog-1">Custom Blow</Link>
+                      <h6 style={{ color: "#222" }}>
+                        <Link href="/blog-1" style={{ color: "#222" }}>
+                          Custom Blow
+                        </Link>
                       </h6>
                     </div>
                   </div>
