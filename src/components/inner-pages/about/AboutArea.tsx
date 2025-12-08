@@ -59,9 +59,29 @@ const AboutArea = () => {
               className="col-xl-6 col-lg-6 wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <div className="about-image style-2">
+              <div
+                className="about-image style-2"
+                style={{ position: "relative" }}
+              >
                 <Image src={about_thumb} alt="about-img" />
-                <h4 className="title-text">40+ Years Experieance</h4>
+                <h4
+                  className="title-text"
+                  style={{
+                    position: "absolute",
+                    bottom: "20px",
+                    left: "20px",
+                    background: "rgba(255, 107, 53, 0.95)",
+                    color: "#fff",
+                    padding: "15px 30px",
+                    borderRadius: "8px",
+                    fontSize: "20px",
+                    fontWeight: 700,
+                    margin: 0,
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  40+ Years Experience
+                </h4>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 mt-5 mt-lg-0">

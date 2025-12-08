@@ -47,9 +47,21 @@ const OffCanvas = ({ offCanvas, setOffCanvas }: any) => {
                       <i className="fas fa-map-marker-alt"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <Link target="_blank" href="#">
-                      F-7, Arunoday Complex, Opp. Little Hut, GIDC Estate Ankleshwar.
-                      </Link>
+                      <div>
+                        U-I - Plot No: 3540-3541, Opp: HBS Pharma Sez, GIDC
+                        Panoli - 394116, India
+                      </div>
+                    </div>
+                  </li>
+                  <li className="d-flex align-items-center">
+                    <div className="offcanvas__contact-icon">
+                      <i className="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div className="offcanvas__contact-text">
+                      <div>
+                        U-II Plot No: 120-121-11 & 12, GIDC Ankleshwar - 393002,
+                        Gujarat, India
+                      </div>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">
@@ -57,11 +69,9 @@ const OffCanvas = ({ offCanvas, setOffCanvas }: any) => {
                       <i className="fas fa-envelope"></i>
                     </div>
                     <div className="offcanvas__contact-text">
-                      <Link href="tel:+013-003-003-9993">
-                        <span className="mailto:info@enofik.com">
-                          info@shrinavkarblowpack.com
-                        </span>
-                      </Link>
+                      <span className="mailto:info@enofik.com">
+                        info@shrinavkarblowpack.com
+                      </span>
                     </div>
                   </li>
                   <li className="d-flex align-items-center">

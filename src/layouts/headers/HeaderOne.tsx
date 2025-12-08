@@ -65,7 +65,10 @@ const HeaderOne = ({ headerTop }: any) => {
                     >
                       <Image src={dot_icon} alt="img" />
                       <Link className="bar-icon d-lg-none my-auto" href="#">
-                        <i className="fas fa-bars"></i>
+                        <i
+                          className="fas fa-bars"
+                          style={{ color: "#000" }}
+                        ></i>
                       </Link>
                     </div>
                   </div>

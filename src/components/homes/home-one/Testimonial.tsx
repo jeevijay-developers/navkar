@@ -156,15 +156,40 @@ const Testimonial = ({ padding }: any) => {
                           className="fa-solid fa-quote-right"
                           style={{ color: "#ffe000 " }}
                         ></i>
-                        <p style={{ fontSize: "small", color: "#14b2f1 " }}>
+                        <p
+                          style={{
+                            fontSize: "16px",
+                            color: "#ff6b35",
+                            fontWeight: 600,
+                            letterSpacing: "1px",
+                          }}
+                        >
                           {testi_data[0].designation}
                         </p>
                       </div>
-                      <h4>{testi_data[0].desc}</h4>
+                      <h4
+                        style={{
+                          color: "#d1d1d1",
+                          fontSize: "18px",
+                          lineHeight: "1.7",
+                          fontWeight: 400,
+                          fontStyle: "bold",
+                        }}
+                      >
+                        {testi_data[0].desc}
+                      </h4>
                       <div className="client-info">
-                        <h5>{testi_data[0].name}</h5>
+                        <h5
+                          style={{
+                            color: "#dddddd",
+                            fontSize: "20px",
+                            fontWeight: 700,
+                          }}
+                        >
+                          {testi_data[0].name}
+                        </h5>
                         {/* <p>{testi_data[0].designation}</p> */}
-                        <p style={{ color: "#ffe000 " }}>
+                        <p style={{ color: "#ffe000", fontSize: "16px" }}>
                           {testi_data[0].tempData}
                         </p>
                       </div>
@@ -246,15 +271,40 @@ const Testimonial = ({ padding }: any) => {
                           className="fa-solid fa-quote-right"
                           style={{ color: "#ffe000 " }}
                         ></i>
-                        <p style={{ fontSize: "small", color: "#14b2f1 " }}>
+                        <p
+                          style={{
+                            fontSize: "16px",
+                            color: "#ff6b35",
+                            fontWeight: 600,
+                            letterSpacing: "1px",
+                          }}
+                        >
                           {testi_data[1].designation}
                         </p>
                       </div>
-                      <h4>{testi_data[1].desc}</h4>
+                      <h4
+                        style={{
+                          color: "#d1d1d1",
+                          fontSize: "18px",
+                          lineHeight: "1.7",
+                          fontWeight: 400,
+                          fontStyle: "bold",
+                        }}
+                      >
+                        {testi_data[1].desc}
+                      </h4>
                       <div className="client-info">
-                        <h5>{testi_data[1].name}</h5>
+                        <h5
+                          style={{
+                            color: "#dddddd",
+                            fontSize: "20px",
+                            fontWeight: 700,
+                          }}
+                        >
+                          {testi_data[1].name}
+                        </h5>
                         {/* <p>{testi_data[1].designation}</p> */}
-                        <p style={{ color: "#ffe000 " }}>
+                        <p style={{ color: "#ffe000", fontSize: "16px" }}>
                           {testi_data[1].tempData}
                         </p>
                       </div>
