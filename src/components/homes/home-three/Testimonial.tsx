@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 
 import avatar_1 from "@/assets/img/testimonial/07.jpg";
+import avatar_2 from "@/assets/img/testimonial/01.jpg";
+import avatar_3 from "@/assets/img/testimonial/02.jpg";
+import avatar_4 from "@/assets/img/testimonial/03.jpg";
 
 interface DataType {
   id: number;
@@ -20,69 +23,73 @@ const testi_data: DataType[] = [
     id: 1,
     desc_1: (
       <>
-        The personalized guidance I received was exceptional. They helped me
-        navigate through the complex admission process with ease
+        Navkar has been our trusted partner for packaging solutions for over 5
+        years. Their attention to quality and timely delivery is exceptional.
       </>
     ),
     desc_2: (
       <>
-        hanks to their support, I got into my dream university in the USA.
-        Highly recommended!
+        The custom blow molding services perfectly match our product
+        requirements. Highly professional team!
       </>
     ),
     avatar: avatar_1,
-    name: "Rohit Sharma, Bengaluru",
-    designation: "Senior engineer",
+    name: "Rajesh Kumar",
+    designation: "Procurement Manager",
   },
   {
     id: 2,
     desc_1: (
       <>
-        The team was incredibly efficient and patient in handling my visa
-        application. They provided clear instructions and updates at every
-        stage.
+        Outstanding quality plastic packaging solutions. The team at Navkar
+        understands our industry needs and delivers consistently.
       </>
     ),
     desc_2: (
       <>
-        My visa approval process was smooth and stress-free. Kudos to the entire
-        team!
+        Their innovative approach to sustainable packaging has helped us reduce
+        costs while maintaining quality standards.
       </>
     ),
-    avatar: avatar_1,
-    name: "Neha Verma, Mumbai",
-    designation: "Senior engineer",
+    avatar: avatar_2,
+    name: "Priya Patel",
+    designation: "Operations Head",
   },
   {
     id: 3,
     desc_1: (
       <>
-        The quality of the products exceeded my expectations. The delivery was
-        quick, and the customer service team was very responsive.
+        Excellent service and product quality. Navkar&apos;s packaging solutions
+        have significantly improved our product presentation.
       </>
     ),
     desc_2: (
       <>
-        It &apos; s great to have a reliable online shopping platform like this.
+        Their customer support is responsive and they always deliver on time. A
+        reliable partner for our business.
       </>
     ),
-    avatar: avatar_1,
-    name: "Pooja Reddy, Hyderabad",
-    designation: "Senior engineer",
+    avatar: avatar_3,
+    name: "Amit Shah",
+    designation: "Supply Chain Director",
   },
   {
     id: 4,
     desc_1: (
       <>
-        From booking the appointment to the consultation, everything was
-        seamless. The doctors were professional and attentive, and I felt cared
-        for throughout my treatment.
+        Working with Navkar Blowpack has been a game-changer for our packaging
+        needs. Their expertise in blow molding technology is evident.
       </>
     ),
-    desc_2: <>Truly world-class healthcare.</>,
-    avatar: avatar_1,
-    name: "Amit Jain, Delhi",
-    designation: "Senior engineer",
+    desc_2: (
+      <>
+        From design consultation to final delivery, the entire process is
+        seamless. Truly a world-class manufacturer.
+      </>
+    ),
+    avatar: avatar_4,
+    name: "Sunita Desai",
+    designation: "Quality Assurance Manager",
   },
 ];
 
@@ -130,7 +137,7 @@ const Testimonial = ({ padding }: any) => {
         <div className="section-title text-center">
           <span className="wow fadeInUp">PUBLIC TESTIMONIAL</span>
           <h2 className="wow fadeInUp" data-wow-delay=".3s">
-            public feedback about Industril
+            public feedback about Navkar
           </h2>
         </div>
         <Swiper
@@ -149,8 +156,25 @@ const Testimonial = ({ padding }: any) => {
                   <p className="text-2">{item.desc_2}</p>
                 </div>
                 <div className="client-info">
-                  <div className="client-image">
-                    <Image src={item.avatar} alt="client-img" />
+                  <div
+                    className="client-image"
+                    style={{
+                      width: "80px",
+                      height: "80px",
+                      borderRadius: "50%",
+                      overflow: "hidden",
+                      objectFit: "cover",
+                    }}
+                  >
+                    <Image
+                      src={item.avatar}
+                      alt="client-img"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                   <div className="client-content">
                     <h5>{item.name}</h5>

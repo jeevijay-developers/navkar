@@ -15,15 +15,24 @@ const faq_contact_data: DataType[] = [
     title: "Mail Address",
     icon: "fa-solid fa-envelope",
     contact_1: <>info@shrinavkarblowpack.com</>,
-    contact_2: <>info@shrinavkarblowpack.com</>,
+    contact_2: <></>,
   },
   {
     id: 2,
     data_wow_delay: ".7s",
     title: "Factory Locations",
     icon: "fa-solid fa-location-dot",
-    contact_1: <>Ankleshwar, Gujarat</>,
-    contact_2: <>Panoli, Gujarat</>,
+    contact_1: (
+      <>
+        U-I - Plot No: 3540-3541, Opp: HBS Pharma Sez, GIDC Panoli - 394116,
+        India
+      </>
+    ),
+    contact_2: (
+      <>
+        U-II Plot No: 120-121-11 & 12, GIDC Ankleshwar - 393002, Gujarat, India
+      </>
+    ),
   },
   {
     id: 3,
@@ -31,7 +40,7 @@ const faq_contact_data: DataType[] = [
     title: "Office Hour",
     icon: "fa-solid fa-clock",
     contact_1: <>Mon to Sat: 9:00 AM to 6:00 PM</>,
-    contact_2: <>Mon to Sat: 9:00 AM to 6:00 PM</>,
+    contact_2: <></>,
   },
 ];
 
@@ -59,7 +68,7 @@ const FaqContact = ({ padding }: any) => {
                     <h3>{item.title}</h3>
                     <ul>
                       <li>{item.contact_1}</li>
-                      <li>{item.contact_2}</li>
+                      <li>{item?.contact_2}</li>
                     </ul>
                   </div>
                 </div>

@@ -59,7 +59,7 @@ const Hero = () => {
   return (
     <>
       <section className="hero-section">
-        <ul className="hero-social">
+        {/* <ul className="hero-social">
           <li>
             <Link href="#0">
               <i className="fa-brands fa-facebook-f"></i>
@@ -80,11 +80,11 @@ const Hero = () => {
               <i className="fa-brands fa-youtube"></i>
             </Link>
           </li>
-        </ul>
+        </ul> */}
 
-        <div className="swiper-dot">
+        {/* <div className="swiper-dot">
           <div className="dot"></div>
-        </div>
+        </div> */}
         <Swiper
           {...setting}
           modules={[Pagination, EffectFade, Autoplay]}

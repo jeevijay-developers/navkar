@@ -20,13 +20,13 @@ const counter_data: DataType[] = [
   },
   {
     id: 2,
-    title: "ROJECT COMPLITED",
+    title: "PROJECT COMPLETED",
     count: 1500,
     data_wow_delay: "0.5s",
   },
   {
     id: 3,
-    title: "AWARDS WINNG",
+    title: "AWARDS WINNING",
     count: 650,
     data_wow_delay: "0.7s",
   },
