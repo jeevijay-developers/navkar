@@ -18,7 +18,7 @@ const HeaderOne = ({ headerTop }: any) => {
   return (
     <>
       <header>
-        {headerTop && <HeaderTop />}
+        {/* {headerTop && <HeaderTop />} */}
         <div
           id="header-sticky"
           className={`header-1 ${headerTop ? "" : "style-2"} ${
